@@ -33,10 +33,6 @@
 			<img src="http://gravatar.com/avatar/17f37be7dfd491b7b442a79f69e08f16?s=48" alt="Prateek Saxena">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
-
-		<div id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
-		</div><!-- #secondary -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="col-md-7 site-content">
