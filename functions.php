@@ -57,9 +57,9 @@ function feed_setup() {
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
-	) );
+	// add_theme_support( 'post-formats', array(
+	// 	'chat', 'image', 'video', 'quote', 'link', 'gallery', 'status',
+	// ) );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'feed_custom_background_args', array(
@@ -128,3 +128,85 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/* ACF Code */
+
+define( 'ACF_LITE', true );
+
+include_once('inc/acf/acf.php');
+
+function my_acf_admin_head()
+{
+	?>
+	<style type="text/css">
+	.acf-radio-list label img {top: 4px; position: relative; margin-right: 5px;}
+	.acf-radio-list li {  margin-right: 8px !important; padding: 4px 8px 8px 4px; border-radius: 5px; background-color: #DDDDDD; color: #777777;}
+	.acf-radio-list input[type="radio"] {}
+	.acf-radio-list label {}
+
+	.selected {background: red;}
+	</style>
+
+	<script type="text/javascript">
+	(function($){
+
+
+	})(jQuery);
+	</script>
+	<?php
+}
+
+add_action('acf/input/admin_head', 'my_acf_admin_head');
+
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_posts-2',
+		'title' => 'Posts',
+		'fields' => array (
+			array (
+				'key' => 'field_5485d8360dbd7',
+				'label' => 'Post Type',
+				'name' => 'post_type',
+				'type' => 'radio',
+				'choices' => array (
+					'Standard' => 'Standard',
+					'Status' => 'Status',
+					'CheckIn' => 'CheckIn',
+					'Image' => 'Image',
+					'Link' => 'Link',
+					'Quote' => 'Quote',
+					'Chat' => 'Chat',
+					'Video' => 'Video',
+					'Gallery' => 'Gallery',
+				),
+				'other_choice' => 0,
+				'save_other_choice' => 0,
+				'default_value' => 'Standard',
+				'layout' => 'horizontal',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'acf_after_title',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
