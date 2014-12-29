@@ -307,9 +307,15 @@ article {
 	margin-right: 10px;
 }
 
+.comment-metadata a,
+.comment-author a {
+	text-decoration: none;
+}
+
 .comment-meta .says { display: none; }
 
 .comment-metadata {
+	margin-top: -2px;
 	font-size: 0.6em;
 	text-transform: uppercase;
 }
@@ -326,10 +332,13 @@ article {
 	padding: 0.2em 0.5em;
 	font-size: 0.6em;
 	color: #fff;
+	text-decoration: none;
+	border: 1px solid #000;
 }
 
 .comment-reply-link:hover {
-	background: #888;
+	color: #000;
+	background: #fff;
 }
 
 article.comment-body {
