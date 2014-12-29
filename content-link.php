@@ -1,6 +1,6 @@
 <div class="link">
 <header class="entry-header">
-	<h1><a href="<?php echo get_field( 'link' ) ?>"><?php echo the_title() ?></a></h1>
+	<h1><a href="<?php echo get_field( 'link' ) ?>" target="_blank"><?php echo the_title() ?></a></h1>
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div>
