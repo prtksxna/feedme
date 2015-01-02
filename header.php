@@ -30,7 +30,7 @@
 	<div class="row">
 	<header id="masthead" class="col-md-3 col-md-offset-1 site-header" role="banner">
 		<div class="site-branding">
-			<img src="http://gravatar.com/avatar/17f37be7dfd491b7b442a79f69e08f16?s=48" alt="Prateek Saxena">
+			<img src="http://gravatar.com/avatar/<?php echo md5( get_option( 'admin_email', 'null' ) ); ?>?s=48" alt="<?php bloginfo( 'name' ); ?>">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
