@@ -10,7 +10,7 @@
 	<div class="entry-meta">
 		<a href="<?php echo the_permalink() ?>">
 			<?php the_date() ?> at
-			<?php the_time('F j Y') ?>
+			<?php the_time() ?>
 		</a>
 	</div><!-- .entry-meta -->
 	<h1><a href="<?php echo the_permalink() ?>"><?php echo the_title() ?></a></h1>
