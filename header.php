@@ -12,6 +12,11 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
+
+<link rel="me" href="https://twitter.com/prtksxna">
+<link rel="me" href="https://github.com/prtksxna">
+<link rel="me" href="https://plus.google.com/+PrateekSaxena17/about">
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
