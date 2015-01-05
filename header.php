@@ -33,10 +33,10 @@
 <div id="page" class="hfeed site container">
 
 	<div class="row">
-	<header id="masthead" class="col-md-3 col-md-offset-1 site-header" role="banner">
+	<header id="masthead" class="col-md-3 col-md-offset-1 site-header h-card" role="banner">
 		<div class="site-branding">
-			<img src="http://gravatar.com/avatar/<?php echo md5( get_option( 'admin_email', 'null' ) ); ?>?s=48" alt="<?php bloginfo( 'name' ); ?>">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<img src="http://gravatar.com/avatar/<?php echo md5( get_option( 'admin_email', 'null' ) ); ?>?s=48" alt="<?php bloginfo( 'name' ); ?>" class="u-photo">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="p-name u-url"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
