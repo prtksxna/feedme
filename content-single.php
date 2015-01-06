@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'h-entry' ); ?>>
 	<?php if ( has_category('post') ) {
 		get_template_part( 'content', 'post' );
 	} ?>
