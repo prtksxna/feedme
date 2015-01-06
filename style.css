@@ -113,7 +113,8 @@ article {
 
 
 /* Check In & Photo */
-.photo, .checkin {
+article .photo,
+article .checkin {
 	display: block;
 	border: 1px solid #ddd;
 	padding: 10px;
