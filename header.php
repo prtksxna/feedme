@@ -30,7 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site container">
+<div id="page" class="site container">
 
 	<div class="row">
 	<header id="masthead" class="col-md-3 col-md-offset-1 site-header h-card vcard" role="banner">
