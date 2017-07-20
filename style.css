@@ -219,6 +219,28 @@ article .checkin {
 	font-style: italic;
 }
 
+blockquote {
+	font-style: italic;
+	border-left: 5px solid #eee;
+	margin: 0;
+	padding: 10px 20px;
+	quotes: "\201C""\201D""\2018""\2019";
+	margin: 20px 0;
+}
+
+blockquote p {
+	display: inline;
+}
+
+blockquote::before {
+	color: #ddd;
+	content: '“';
+	font-size: 3em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
 
 /* Thing */
 .thing .entry-meta {
