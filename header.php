@@ -36,7 +36,7 @@
 	<header id="masthead" class="col-md-3 col-md-offset-1 site-header h-card vcard" role="banner">
 		<div class="site-branding">
 			<img src="http://gravatar.com/avatar/<?php echo md5( get_option( 'admin_email', 'null' ) ); ?>?s=48" alt="<?php bloginfo( 'name' ); ?>" class="u-photo photo">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="p-name u-url fn url"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="me" class="p-name u-url fn url"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
