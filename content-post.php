@@ -1,6 +1,6 @@
 <div class="post">
 <header class="entry-header">
-	<h1><a href="<?php echo the_permalink() ?> class="p-name u-url"><?php echo the_title() ?></a></h1>
+	<h1><a href="<?php echo the_permalink() ?>" class="p-name u-url"><?php echo the_title() ?></a></h1>
 	<div class="entry-meta">
 		<a href="<?php echo the_permalink() ?>">
 			<time datetime="<?php the_time( 'Y-m-d H:i' ) ?>" class="dt-published">
